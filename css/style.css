@@ -1,6 +1,71 @@
+/* common */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.container{
+    display: flex;
+    margin: 0 20%;
+    padding: 25px 0;
+}
+
+/* utility */
+
+.d_flex{
+    display: flex;
+}
+
+.wrp{
+    flex-wrap: wrap;
+}
+
+/* #region debug*/
+/*debug*/
+section {
+    height: 500px;
+}
+
+.services, .testimonials, .about{
+    background-color: rgb(165, 250, 250);
+}
+
+.strategic, .benefits, .free{
+    background-color: rgb(247, 174, 236);
+}
+
+.container{
+    height: 500px;
+    background-color: rgb(60, 60, 134);
+}
+
+.row{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(129, 245, 121);
+}
+
+.col-8, .col-4{
+    height: 50 px;
+    background-color: rgb(208, 97, 245);
+}
+/* #endregion debug*/
+
+
+
+/* #region header */
+/* #endregion header */
+
+/* #region main */
+.col-8{
+    width: calc((100% / 12) * 8);
+}
+
+.col-4{
+    width: calc((100% / 12) * 4);
+}
+/* #endregion main */
+
+/* #region footer */
+/* #endregion footer */
