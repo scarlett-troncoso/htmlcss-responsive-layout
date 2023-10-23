@@ -21,15 +21,31 @@
     flex-wrap: wrap;
 }
 
+.padd_1{
+    padding: 1rem 0;
+}
+
+.padd_05{
+    padding: 0.5rem 0;
+}
 /* #region debug*/
 /*debug*/
 
-#H{
+#header_menu{
     height: 50px;
     background-color: rgb(249, 49, 136);
 }
 
-.container{
+header> .container{
+    height: 100%;
+    background-color: rgb(252, 162, 234);
+}
+
+.menu> .row{
+    background-color: rgb(36, 220, 233);
+}
+
+.services> .container{
     height: 500px;
     background-color: rgb(60, 60, 134);
 }
@@ -47,13 +63,15 @@ section {
 }
 
 .row{
-    height: 400px;
+    height: 100%;
     width: 100%;
     background-color: rgb(129, 245, 121);
 }
 
-.col-8, .col-4{
+.col-8 > div,
+.col-4 > div {
     background-color: rgb(208, 97, 245);
+    height: 100%;
 }
 /* #endregion debug*/
 
@@ -64,18 +82,25 @@ section {
 
 /* #region main */
 
-.row{
-    gap: 10px;
-}
-
 .col-8{
-    width: calc((100% / 12) * 8 - 10px);
-    padding: 10px;
+    width: calc((100% / 12) * 8);
 }
 
 .col-4{
-    width: calc((100% / 12) * 4 - 10px);
-    padding: 10px;
+    width: calc((100% / 12) * 4);
+}
+
+.col-8 > div,
+.col-4 > div {
+    padding: 1rem;
+}
+
+.col-8, .design, .develop{
+    padding-right: 1rem;
+}
+
+.app, .clean{
+    padding-bottom: 1rem;
 }
 /* #endregion main */
 
