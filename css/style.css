@@ -6,9 +6,9 @@
 }
 
 .container{
-    display: flex;
     margin: auto;
     padding: 0.5rem;
+    width: 90%;
 }
 
 /* utility */
@@ -28,6 +28,15 @@
 .padd05{
     padding: 0.5rem;
 }
+
+.txt_center{
+    text-align: center;
+}
+
+.margin05{
+    margin: 0.5rem;
+}
+
 /* #region debug*/
 /*debug*/
 
@@ -71,6 +80,31 @@ section {
     background-color: rgb(208, 97, 245);
 }
 
+.card_planning, .card_app{
+    height: 100%;
+    background-color: rgb(208, 97, 245);
+}
+
+.testimonials{
+    height: 1600px;
+}
+
+.testimonials .container{
+    height: 100%;
+}
+
+.card_test> img{
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.card_test{
+    height: 25%;
+    background-color: rgb(208, 97, 245);
+}
+
 #footer_contatti{
     height: 70px;
     background-color: black;
@@ -81,7 +115,6 @@ section {
 
 /* #region header */
 #header_menu> .container{
-    width: 90%;
     justify-content: space-between;
 }
 
@@ -96,18 +129,29 @@ section {
 
 /* #region main */
 .services> .container{
-    width: 90%;
 }
 
 .col-12{
     width: 100%;
 }
 
+.testimonials> .container{
+    display: block;
+    line-height: 2rem;
+}
+
 /* #endregion main */
+
+/* #region footer */
+/* #endregion footer */
+
+/* #region media*/
 
 @media screen and (max-width: 480px) {
 
 }
+
+
 
 @media screen and (min-width: 768px) {
     .col-md-8{
@@ -126,21 +170,21 @@ section {
         display: none;
     }
 
+    .card_test{
+        display: flex;
+        align-content: center;
+    }
+}
+
 @media screen and (min-width: 1152px) {
     .container{
         width: 80%;
     }
+
+    .strategic .container{
+        flex-wrap: nowrap;
+    }
 }
 
+/* #endregion media*/
 
-
-
-
-   
-}
-
-
-
-
-/* #region footer */
-/* #endregion footer */
