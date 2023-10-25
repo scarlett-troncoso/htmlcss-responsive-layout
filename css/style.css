@@ -7,8 +7,8 @@
 
 .container{
     display: flex;
-    margin: 0 20%;
-    padding: 25px 0;
+    margin: auto;
+    padding: 0.5rem;
 }
 
 /* utility */
@@ -21,37 +21,29 @@
     flex-wrap: wrap;
 }
 
-.padd_1{
-    padding: 1rem 0;
-}
-
-.padd_05{
-    padding: 0.5rem 0;
-}
 /* #region debug*/
 /*debug*/
 
 #header_menu{
-    height: 50px;
     background-color: rgb(249, 49, 136);
 }
 
 header> .container{
     height: 100%;
-    background-color: rgb(252, 162, 234);
+    border: 1px solid rgb(12, 12, 12);
 }
 
 .menu> .row{
     background-color: rgb(36, 220, 233);
 }
 
-.services> .container{
-    height: 500px;
-    background-color: rgb(60, 60, 134);
+.container{
+    height: 600px;
+    border: 1px solid rgb(10, 10, 10);
 }
 
 section {
-    height: 500px;
+    height: 600px;
 }
 
 .services, .testimonials, .about{
@@ -63,7 +55,6 @@ section {
 }
 
 .row{
-    height: 100%;
     width: 100%;
     background-color: rgb(129, 245, 121);
 }
@@ -73,11 +64,29 @@ section {
     background-color: rgb(208, 97, 245);
     height: 100%;
 }
+
+#footer_contatti{
+    height: 70px;
+    background-color: black;
+}
+
 /* #endregion debug*/
 
 
-
 /* #region header */
+
+.menu> .logo{
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.menu> .row{
+    width: 50%;
+}
+
+.col-9{
+    width: calc(100% / 9 * 3);
+}
 /* #endregion header */
 
 /* #region main */
@@ -95,14 +104,39 @@ section {
     padding: 1rem;
 }
 
-.col-8, .design, .develop{
-    padding-right: 1rem;
+.col-8, .col-4{
+    padding: 0.5rem;
 }
 
-.app, .clean{
-    padding-bottom: 1rem;
-}
 /* #endregion main */
+
+@media screen and (max-width: 1152px) {
+    .container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col-md-12{
+        width: 100%;
+    }
+
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container{
+        width: 90%;
+    }
+
+    <i class="fa-solid fa-bars"></i>
+}
+
+
+
 
 /* #region footer */
 /* #endregion footer */
