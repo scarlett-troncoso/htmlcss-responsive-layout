@@ -33,8 +33,12 @@
     text-align: center;
 }
 
-.margin05{
-    margin: 0.5rem;
+.line_height2{
+    line-height: 2rem;
+}
+
+.mg_auto{
+    margin: auto;
 }
 
 /* #region debug*/
@@ -54,12 +58,7 @@ header> .container{
 }
 
 .container{
-    height: 600px;
     border: 1px solid rgb(10, 10, 10);
-}
-
-section {
-    height: 600px;
 }
 
 .services, .testimonials, .about{
@@ -85,15 +84,11 @@ section {
     background-color: rgb(208, 97, 245);
 }
 
-.testimonials{
-    height: 1600px;
-}
-
 .testimonials .container{
     height: 100%;
 }
 
-.card_test> img{
+.img_test{
     height: 250px;
     width: 250px;
     background-color: white;
@@ -110,6 +105,10 @@ section {
     background-color: black;
 }
 
+.testo_about, .card_about{
+    height: 100%;
+    background-color: rgb(208, 97, 245);
+}
 /* #endregion debug*/
 
 
@@ -128,21 +127,23 @@ section {
 /* #endregion header */
 
 /* #region main */
-.services> .container{
-}
-
 .col-12{
     width: 100%;
 }
 
-.testimonials> .container{
-    display: block;
-    line-height: 2rem;
+.img_testo> img{
+    height: 100%;
 }
 
+.testo_ult{
+    width: 90%;
+}
 /* #endregion main */
 
 /* #region footer */
+.testo_footer> p{
+    color: white;
+}
 /* #endregion footer */
 
 /* #region media*/
@@ -151,13 +152,15 @@ section {
 
 }
 
-
-
 @media screen and (min-width: 768px) {
     .col-md-8{
         width: calc((100% / 12) * 8);
     }
     
+    .benefits_cards> .col-md-6{
+        width: calc((100% / 12) * 6);
+    }
+
     .col-md-4{
         width: calc((100% / 12) * 4);
     }
@@ -172,7 +175,22 @@ section {
 
     .card_test{
         display: flex;
-        align-content: center;
+    }
+
+    .img_test{
+        width: 40%;
+    }
+
+    .testo{
+        width: 70%;
+    }
+
+    .about> .container{
+        flex-wrap: nowrap;
+    }
+
+    .testo_ult{
+        width: 70%;
     }
 }
 
@@ -183,6 +201,14 @@ section {
 
     .strategic .container{
         flex-wrap: nowrap;
+    }
+    
+    .benefits_cards> .col-md-4{
+        width: calc((100% / 12) * 4);
+    }
+
+    .testo_ult{
+        width: 50%;
     }
 }
 
