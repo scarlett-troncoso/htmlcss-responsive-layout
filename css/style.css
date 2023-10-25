@@ -21,6 +21,13 @@
     flex-wrap: wrap;
 }
 
+.padd1{
+    padding: 1rem;
+}
+
+.padd05{
+    padding: 0.5rem;
+}
 /* #region debug*/
 /*debug*/
 
@@ -59,10 +66,9 @@ section {
     background-color: rgb(129, 245, 121);
 }
 
-.col-8 > div,
-.col-4 > div {
-    background-color: rgb(208, 97, 245);
+.col-12> div {
     height: 100%;
+    background-color: rgb(208, 97, 245);
 }
 
 #footer_contatti{
@@ -74,14 +80,13 @@ section {
 
 
 /* #region header */
-
-.menu> .logo{
-    width: 50%;
-    padding: 0.5rem;
+#header_menu> .container{
+    width: 90%;
+    justify-content: space-between;
 }
 
-.menu> .row{
-    width: 50%;
+.menu .desktop{
+    display: none;  
 }
 
 .col-9{
@@ -90,49 +95,48 @@ section {
 /* #endregion header */
 
 /* #region main */
-
-.col-8{
-    width: calc((100% / 12) * 8);
+.services> .container{
+    width: 90%;
 }
 
-.col-4{
-    width: calc((100% / 12) * 4);
-}
-
-.col-8 > div,
-.col-4 > div {
-    padding: 1rem;
-}
-
-.col-8, .col-4{
-    padding: 0.5rem;
+.col-12{
+    width: 100%;
 }
 
 /* #endregion main */
 
-@media screen and (max-width: 1152px) {
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    .col-md-8{
+        width: calc((100% / 12) * 8);
+    }
+    
+    .col-md-4{
+        width: calc((100% / 12) * 4);
+    }
+
+    .menu .desktop{
+        display: block;  
+    }
+
+    .menu .mobile{
+        display: none;
+    }
+
+@media screen and (min-width: 1152px) {
     .container{
         width: 80%;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .col-md-12{
-        width: 100%;
-    }
 
-    .container{
-        width: 90%;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    
-    .container{
-        width: 90%;
-    }
 
-    <i class="fa-solid fa-bars"></i>
+
+   
 }
 
 
