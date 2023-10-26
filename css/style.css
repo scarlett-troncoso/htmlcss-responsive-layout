@@ -60,7 +60,7 @@
 .btn{
     border: none;
     border-radius: 1.5rem;
-    font-size: large;
+    font-size: medium;
     padding: 0.5rem 1rem;
 }
 
@@ -145,7 +145,7 @@ header> .container{
     align-items: center;
     gap: 20px;
     list-style: none;
-    font-size: large;
+    font-size: medium;
     & a{
         color: var(--color-white);
     }
