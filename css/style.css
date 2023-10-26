@@ -49,7 +49,6 @@
 }
 
 header> .container{
-    height: 100%;
     border: 1px solid rgb(12, 12, 12);
 }
 
@@ -84,10 +83,6 @@ header> .container{
     background-color: rgb(208, 97, 245);
 }
 
-.testimonials .container{
-    height: 100%;
-}
-
 .img_test{
     height: 250px;
     width: 250px;
@@ -96,12 +91,10 @@ header> .container{
 }
 
 .card_test{
-    height: 25%;
     background-color: rgb(208, 97, 245);
 }
 
 #footer_contatti{
-    height: 70px;
     background-color: black;
 }
 
@@ -121,8 +114,8 @@ header> .container{
     display: none;  
 }
 
-.col-9{
-    width: calc(100% / 9 * 3);
+.col-5{
+    width: calc(100% / 12 * 5);
 }
 /* #endregion header */
 
@@ -175,10 +168,7 @@ header> .container{
 
     .card_test{
         display: flex;
-    }
-
-    .img_test{
-        width: 40%;
+        align-items: center;
     }
 
     .testo{
