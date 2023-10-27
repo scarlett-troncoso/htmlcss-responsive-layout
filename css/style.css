@@ -204,7 +204,7 @@
 /* section services*/
 
 .services{
-    padding-top: 1.5rem;
+    padding: 2rem 0 2.5rem 0;
 }
 
 .col-12{
@@ -217,34 +217,34 @@
 
 .img_phone> img{
     width: 100%;
+    padding-top: 1rem;
 }
 
-h3{
+h2{
     color: var(--primary);
     font-weight: bolder;
-    height: 3rem;
-    font-size: 1.25rem;
+    padding-bottom: 1rem;
 }
 
 .testo_services{
-    font-size: smaller;
+    font-size: medium;
     font-weight: bold;
     color: var(--normalgray);
-    line-height: 1.5rem;
+    line-height: 1.75rem;
 }
 
 .btn_services{
-    font-size: smaller;
+    font-size: medium;
     letter-spacing: 3px;
     font-weight: bold;
     color: var(--color-white);
-    padding-inline: 35px;
-    line-height: 1rem;
-    margin-top: 1.5rem;
+    padding-inline: 45px;
+    line-height: 1.5rem;
+    margin-top: 1.75rem;
 }
 
 .img_phone{
-    padding: 0 1.5rem;
+    padding: 0 1.75rem;
 }
 
 .img_phone> img{
@@ -252,7 +252,7 @@ h3{
 }
 
 .card_services> i{
-    font-size: 60px;
+    font-size: 75px;
     color: var(--primary);
 }
 
