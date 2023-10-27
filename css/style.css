@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    /*font-family: 'PT Sans', sans-serif;*/
+    font-family: 'PT Sans', sans-serif;  /*font-family: 'Poppins', sans-serif;*/
 }
 
 .container{
@@ -57,6 +56,14 @@
     text-decoration: none;
 }
 
+.bg_sec{
+    background-color: var(--secondary);
+}
+
+.bg_purpl{
+    background-color: var(--lightpurple);
+}
+
 /* buttons*/
 .btn{
     border: none;
@@ -68,60 +75,64 @@
 /* #region debug*/
 /*debug*/
 
-#header_menu{
+.debug #header_menu{
     background-color: rgb(249, 49, 136);
 }
 
-header> .container{
+.debug header> .container{
     border: 1px solid rgb(12, 12, 12);
 }
 
-.inline_menu{
+.debug .inline_menu{
     background-color: rgb(36, 220, 233);
 }
 
-.container{
+.debug .container{
     border: 1px solid rgb(10, 10, 10);
 }
 
-.services, .testimonials, .about{
+.debug .services, .debug .testimonials, .about{
     background-color: rgb(165, 250, 250);
 }
 
-.strategic, .benefits, .free{
+.debug .strategic, .debug .benefits, .free{
     background-color: rgb(247, 174, 236);
 }
 
-.row{
+.debug .row{
     background-color: rgb(129, 245, 121);
 }
 
-.col-12> div {
+.debug .card_phone> .row{
+    background-color: rgb(19, 100, 13);
+}
+
+.debug .col-12> div {
     height: 100%;
     background-color: rgb(208, 97, 245);
 }
 
-.card_planning, .card_app{
+.debug .card_planning, .debug .card_app{
     height: 100%;
     background-color: rgb(208, 97, 245);
 }
 
-.img_test{
+.debug .img_test{
     height: 250px;
     width: 250px;
     background-color: white;
     border-radius: 50%;
 }
 
-.card_test{
+.debug .card_test{
     background-color: rgb(208, 97, 245);
 }
 
-#footer_contatti{
+.debug #side_footer{
     background-color: black;
 }
 
-.testo_about, .card_about{
+.debug .testo_about, .card_about{
     height: 100%;
     background-color: rgb(208, 97, 245);
 }
@@ -159,7 +170,13 @@ header> .container{
 /* #endregion header */
 
 /* #region main */
+
+/* section services*/
 .col-12{
+    width: 100%;
+}
+
+.img_phone> img{
     width: 100%;
 }
 
@@ -174,25 +191,22 @@ header> .container{
 /* #endregion main */
 
 /* #region footer */
+
+#side_footer{
+    background-color: var(--darkgrey);
+}
+
 .testo_footer> p{
     color: var(--color-white);
 }
 /* #endregion footer */
 
-/* #region media*/
-
-@media screen and (max-width: 480px) {
-
-}
+/* #region media */
 
 /* breakpoint medium */
 @media screen and (min-width: 768px) {
     .col-md-8{
         width: calc((100% / 12) * 8);
-    }
-    
-    .benefits_cards> .col-md-6{
-        width: calc((100% / 12) * 6);
     }
 
     .col-md-4{
@@ -203,6 +217,10 @@ header> .container{
         display: flex;
         align-items: center;
     }
+
+    .benefits_cards> .col-md-6{
+        width: calc((100% / 12) * 6);
+    } 
 
     .testo{
         width: 70%;
@@ -221,7 +239,7 @@ header> .container{
 
 @media screen and (min-width: 1200px) {
     .container{
-        width: 70%;
+        width: 60%;
     }
 
     .menu .desktop{
@@ -230,6 +248,14 @@ header> .container{
 
     .menu .mobile{
         display: none;
+    }
+    
+    .col-lg-6{
+        width: calc((100% / 12) * 6);
+    }
+
+    .card_phone> .row{
+        display: flex;
     }
 
     .strategic .container{
