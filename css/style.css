@@ -199,8 +199,6 @@
     padding-inline: 10px;
     line-height: 0.5rem;
 }
-
-
 /* #endregion header */
 
 /* #region main */
@@ -262,6 +260,17 @@ h2{
 }
 
 /* section strategic*/
+
+.card_planning> img{
+    width: 100%;
+}
+
+.card_app> img{
+    width: 100%;
+}
+
+
+/* section testimonials*/
 .img_testo> img{
     height: 100%;
     flex-shrink: 0;
