@@ -194,8 +194,12 @@
 }
 
 .btn_menu{
-    background-color: var(--color-white);
+    font-size: small;
+    color: black;
+    padding-inline: 10px;
+    line-height: 0.5rem;
 }
+
 
 /* #endregion header */
 
@@ -213,6 +217,7 @@
 
 .card_services{
     border-radius: 20px;
+    height: 100%;
 }
 
 .img_phone> img{
@@ -295,6 +300,10 @@ h2{
         align-items: center;
     }
 
+    .img_phone> img {
+        width: 60%;
+    }
+
     .benefits_cards> .col-md-6{
         width: calc((100% / 12) * 6);
     } 
@@ -315,10 +324,12 @@ h2{
 /* breakpoint large */
 
 @media screen and (min-width: 1200px) {
+
     .container{
-        width: 60%;
+        width: 65%;
     }
 
+    /* header*/
     .menu .desktop{
         display: flex;  
     }
@@ -326,15 +337,56 @@ h2{
     .menu .mobile{
         display: none;
     }
-    
-    .col-lg-6{
-        width: calc((100% / 12) * 6);
+
+    .inline_menu{
+        font-size: small;
     }
 
-    .card_phone> .row{
+    /* section services*/
+    .col-lg-7{
+        width: calc((100% / 12) * 7);
+    }
+
+    .col-lg-5{
+        width: calc((100% / 12) * 5);
+    }
+
+    .card_services> .row{
         display: flex;
     }
 
+    .btn_services{
+        font-size: small;
+        padding-inline: 25px;
+        line-height: 0.75rem;
+    }
+
+    .img_phone{
+        padding-left: 0.5rem;
+    }
+
+    .img_phone> img {
+        width: 100%;
+        padding-top: 4.5rem;
+    }
+
+    .h3-lg{
+        font-size: medium;
+    }
+
+    .testo_services{
+        padding: 0;
+        font-size: small;
+        line-height: 1.5rem;
+    }
+
+    .card_services> i{
+        font-size: 55px;
+        color: var(--primary);
+        padding-top: 0;
+    }
+
+    /*Section Strategic*/
     .strategic .container{
         flex-wrap: nowrap;
     }
@@ -345,6 +397,10 @@ h2{
 
     .testo_ult{
         width: 50%;
+    }
+
+    .col-lg-6{
+        width: calc((100% / 12) * 6);
     }
 }
 
